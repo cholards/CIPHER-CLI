@@ -35,5 +35,3 @@ const balloonAttack = () => {
 }
 
 balloonAttack()
-
-//setTimeout(balloonAttack, 600000);
