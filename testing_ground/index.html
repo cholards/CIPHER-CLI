@@ -1,0 +1,85 @@
+<script>
+    let kola = new Array(3);
+
+    for (let i = 0; i < 3; i++) {
+        kola[i] = new Array(3)
+    }
+    let inc = 1;
+
+    for (let j = 0; j < 3; j++) {
+        for (let k = 0; k < 3; k++) {
+            kola[j][k] = inc;
+            inc++;
+        }
+    }
+
+
+    for (let l = 0; l < 3; l++) {
+        for (let m = 0; m < 3; m++) {
+            document.write(kola[l][m] + '&emsp;')
+        }
+        document.write('<br>')
+    }
+
+
+
+
+
+    document.write('<br> + <br> <br>')
+
+
+
+
+    let mosun = new Array(3);
+
+    for (let i = 0; i < 3; i++) {
+        mosun[i] = new Array(3)
+    }
+    let inc2 = 9;
+
+    for (let j = 0; j < 3; j++) {
+        for (let k = 0; k < 3; k++) {
+            mosun[j][k] = inc2;
+            inc2--;
+        }
+    }
+
+    for (let l = 0; l < 3; l++) {
+        for (let m = 0; m < 3; m++) {
+            document.write(mosun[l][m] + '&emsp;')
+        }
+        document.write('<br>')
+    }
+
+
+    document.write('<br> = <br> <br>')
+
+
+
+    let omo = new Array(3);
+    let inc3 = 1
+
+    for (let q = 0; q < 3; q++) {
+        omo[q] = new Array(3);
+    }
+    for (let n = 0; n < 3; n++) {
+        for (let m = 0; m < 3; m++) {
+            omo[m] = kola[m][n] + mosun[m][n];
+
+        }
+        document.write(omo + '<br>');
+
+    }
+
+
+
+    //console.log(typeof('false'))
+</script>
+
+<script>
+    const delayedHello = () => {
+        console.log('Hi! This is an asynchronous greeting!');
+    };
+
+    setTimeout(delayedHello, 3000);
+</script>
