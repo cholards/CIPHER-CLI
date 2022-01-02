@@ -77,9 +77,21 @@
 </script>
 
 <script>
-    const delayedHello = () => {
-        console.log('Hi! This is an asynchronous greeting!');
+    const xhr = new XMLHttpRequest;
+    const url = 'https://api-to-call.com/endpoint';
+    xhr.responseType = 'json'
+    xhr.onreadystatechange = () => {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            return xhr.response;
+        }
     };
 
-    setTimeout(delayedHello, 3000);
+    xhr.open('GET', url);
+
+    console.log(xhr.open('GET', url))
+
+    // xhr.send()
 </script>
+
+Tell me everthing i need to know (No more suprises); Whats your plan for accomodation eventually advise Come prepared for winter come with enof cash to settle-in (GBP1000 at least) Come ready to bring your husband in withing the first few months to work
+Ineed to discuss all these with my wife and will feed you back
