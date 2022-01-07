@@ -77,21 +77,35 @@
 </script>
 
 <script>
-    const xhr = new XMLHttpRequest;
-    const url = 'https://api-to-call.com/endpoint';
-    xhr.responseType = 'json'
-    xhr.onreadystatechange = () => {
-        if (xhr.readyState === XMLHttpRequest.DONE) {
-            return xhr.response;
-        }
+    let prairieRose = {
+        name: 'Prairie Rose',
+        scientificName: 'Rosa arkansana',
+        kingdom: 'Plantae',
+        genus: 'Rosa',
+        use: 'ornamental'
     };
 
-    xhr.open('GET', url);
+    const printPlantInfo = ({
+        name,
+        scientificName,
+        kingdom
+    }) => {
+        console.log(`The ${name}, or ${scientificName}, is in the kingdom ${kingdom}`)
+    };
 
-    console.log(xhr.open('GET', url))
+    printPlantInfo(prairieRose);
 
-    // xhr.send()
+
+    ({
+        a,
+        b,
+        ...rest
+    } = {
+        a: 10,
+        b: 20,
+        c: 30,
+        d: 40
+    });
+
+    console.log(rest)
 </script>
-
-Tell me everthing i need to know (No more suprises); Whats your plan for accomodation eventually advise Come prepared for winter come with enof cash to settle-in (GBP1000 at least) Come ready to bring your husband in withing the first few months to work
-Ineed to discuss all these with my wife and will feed you back
